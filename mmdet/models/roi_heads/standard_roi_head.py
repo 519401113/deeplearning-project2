@@ -250,9 +250,9 @@ class StandardRoIHead(BaseRoIHead, BBoxTestMixin, MaskTestMixin):
             The outer list corresponds to each image, and first element
             of tuple is bbox results, second element is mask results.
         """
-        # bbox_save = proposal_list[0].clone().detach().cpu().int().numpy()## voc rescle=(1000, 600)
-        # import numpy as np
-        # np.save('proposal_bboxes.npy', bbox_save)
+        bbox_save = proposal_list[0].clone().detach().cpu().int().numpy()## voc rescle=(1000, 600)
+        import numpy as np
+        np.save('proposal_bboxes.npy', bbox_save)
         assert self.with_bbox, 'Bbox head must be implemented.'
 
         det_bboxes, det_labels = self.simple_test_bboxes(
