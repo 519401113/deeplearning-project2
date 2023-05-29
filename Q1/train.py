@@ -285,7 +285,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     # data dir
-    cifar_data_path = '/remote-home/mfdu/nlpbeginner/hw2'
+    cifar_data_path = '/hw2'
     # para
     args.ckpt_dir = os.path.join(args.name, 'ckpts')
     args.logs_dir = os.path.join(args.name, 'logs')
