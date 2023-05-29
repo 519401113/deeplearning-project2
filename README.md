@@ -22,7 +22,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py --name test --batch_size 512 --lr 0.001 -
 ```
 ## visualize images
 run the function **visualize()** in file **utils.py**
-1 image of 4x4 images（original images，cutout，mixup，cutmix）for visualization is in './Q1'
+1 image of 4x4 images（original images，cutout，mixup，cutmix）for visualization is in './Q1/save_imgs.jpg'
 
 链接：https://pan.baidu.com/s/1GqHdfA2el4nyEtHFM8GuXQ 
 提取码：kanv
