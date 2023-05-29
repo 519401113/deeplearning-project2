@@ -7,7 +7,7 @@ import cv2
 image_list = sorted(os.listdir('vis_image'))
 image_paths = [os.path.join('vis_image', a) for a in image_list]
 
-config_file = '../configs/faster_rcnn/voc_faster_rcnn_r50_fpn_1x.py'
+config_file = '../checkpoints/faster_rcnn/voc_faster_rcnn_r50_fpn_1x.py'
 checkpoint_file = '../work_dirs/voc_faster_rcnn_r50_fpn_1x/latest.pth'
 
 model = init_detector(config_file, checkpoint_file, device='cuda:0')
@@ -33,7 +33,7 @@ for i in image_paths:
 
 
 
-config_file = '../configs/fcos/fcos_r50_caffe_fpn_gn-head_1x_voc.py'
+config_file = '../checkpoints/fcos/fcos_r50_caffe_fpn_gn-head_1x_voc.py'
 checkpoint_file = '../work_dirs/fcos_r50_caffe_fpn_gn-head_1x_voc/latest.pth'
 
 model = init_detector(config_file, checkpoint_file, device='cuda:0')
