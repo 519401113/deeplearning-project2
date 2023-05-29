@@ -1,7 +1,7 @@
 # deeplearning-project2 for Q1
 
 ## prepare data
-You can directly run the file **train.py** , the CIFAR100 data will be automaicly downloaded in './Q1/cifar-100-python'
+You can directly run the file **train.py** , the CIFAR100 data will be automatically downloaded in './Q1/cifar-100-python'
 
 ## train resnet18 with different data augmentation
 run for baseline
