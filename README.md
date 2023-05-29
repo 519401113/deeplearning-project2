@@ -1,4 +1,4 @@
-# deeplearning-project2
+# deeplearning-project2 for Q2
 
 ## prepare data
 ```
