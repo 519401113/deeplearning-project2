@@ -48,6 +48,8 @@ CUDA_VISIBLE_DEVICES=0 bash tools/dist_train.sh configs/fcos/fcos_r50_caffe_fpn_
 ## visualize images
 download the trained checkpoints of faster rcnn and fcos as './checkpoints'
 
+The trained models and training logs are uploaded in the Baidu Netdisk.
+
 链接：https://pan.baidu.com/s/1-KWjwT1bfJPayeXXISw0Vg 
 提取码：15wc
 ```
