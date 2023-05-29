@@ -25,3 +25,6 @@ download the trained checkpoints of faster rcnn and fcos as './checkpoints'
 cd demo
 python vis.py
 ```
+4 images for visualization are in './demo/vis_image'
+
+visualization results for faster rcnn and fcos will be './demo/xxx_result'
