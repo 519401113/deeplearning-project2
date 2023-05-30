@@ -6,19 +6,19 @@ You can directly run the file **train.py** , the CIFAR100 data will be automatic
 ## train resnet18 with different data augmentation
 run for baseline
 ```
-CUDA_VISIBLE_DEVICES=0 python train.py --name test --batch_size 512 --lr 0.001 --num_epochs 200
+CUDA_VISIBLE_DEVICES=0 python train.py --name {MODEL_NAME} --batch_size 512 --lr 0.001 --num_epochs 200
 ```
 run for cutout method
 ```
-CUDA_VISIBLE_DEVICES=0 python train.py --name test --batch_size 512 --lr 0.001 --num_epochs 200 --cutout --cutout_prob 0.5
+CUDA_VISIBLE_DEVICES=0 python train.py --name {MODEL_NAME} --batch_size 512 --lr 0.001 --num_epochs 200 --cutout --cutout_prob 0.5
 ```
 run for mixup method
 ```
-CUDA_VISIBLE_DEVICES=0 python train.py --name test --batch_size 512 --lr 0.001 --num_epochs 200 --mixup --mixup_prob 0.5
+CUDA_VISIBLE_DEVICES=0 python train.py --name {MODEL_NAME} --batch_size 512 --lr 0.001 --num_epochs 200 --mixup --mixup_prob 0.5
 ```
 run for cutmix method
 ```
-CUDA_VISIBLE_DEVICES=0 python train.py --name test --batch_size 512 --lr 0.001 --num_epochs 200 --cutmix --cutmix_prob 0.5
+CUDA_VISIBLE_DEVICES=0 python train.py --name {MODEL_NAME} --batch_size 512 --lr 0.001 --num_epochs 200 --cutmix --cutmix_prob 0.5
 ```
 ## visualize images
 run the function **visualize()** in file **utils.py**
